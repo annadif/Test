@@ -257,20 +257,19 @@
     font-weight: 600;
     vertical-align: middle;
 }
-
-@media (min-width: 1200px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        visibility: hidden;
-        top: 100%;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
-        border: 0;
-        border-radius: 10px;
-        transition: .5s;
-        opacity: 0;
+@media (max-width: 991.98px) {
+    .navbar .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        background: transparent !important;
+        border: none;
+        box-shadow: none;
     }
 }
+
+
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-primary);
