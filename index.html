@@ -29,7 +29,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy">
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -70,7 +70,7 @@
         <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar p-0">
+        <div class="container-fluid nav-bar p-0" id="navbar">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="display-5 text-secondary m-0"><img src="img/logo.png" class="img-fluid" alt=""> <span class="bleu">Agence</span> <span class="orange">Sun Travel</span><span class="bleu">.</span></h1>
@@ -79,32 +79,32 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#experience" class="nav-item nav-link">Experience</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Services</span></a>
                             <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Feature</a>
-                                <a href="countries.html" class="dropdown-item">Countries</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="training.html" class="dropdown-item">Training</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="#visa" class="dropdown-item">Visa</a>
+                                <a href="#pays" class="dropdown-item">Pays</a>
+                                <a href="#santé" class="dropdown-item">Santé</a>
+                                <a href="#autres" class="dropdown-item">Autres</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                     
-                </div> -->
+                </div>
             </nav>
         </div>
         <!-- Navbar & Hero End -->
 
 
         <!-- Carousel Start -->
-        <div class="carousel-header">
+        <section id="home">
+            <div class="carousel-header">
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
@@ -120,7 +120,7 @@
                                 <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">PARTEZ À L'AVENTURE</h1>
                                 <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">PARTEZ À L'AVENTURE AVEC UNE DE NOS OFFRES DE VOYAGE ORGANISÉES!
                                 </p>
-                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Plus d'infos</a>
+                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#pays">Plus d'infos</a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                 <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">OMRA & HADJ</h1>
                                 <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Partez en Omra ou Hadj en toute sérénité avec notre agence ! Service fiable, prix compétitifs. Réservez dès maintenant
                                 </p>
-                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Plus d'infos</a>
+                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#visa">Plus d'infos</a>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                                 <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Voyagez pour votre santé avec sérénité</h1>
                                 <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Nous simplifions votre voyage médical en prenant en charge les démarches essentielles.
                                 </p>
-                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Plus d'infos</a>
+                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#santé">Plus d'infos</a>
                             </div>
                         </div>
                     </div>
@@ -159,11 +159,13 @@
                 </button>
             </div>
         </div>
+        </section>
+        
         <!-- Carousel End -->
 
 
         <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
@@ -178,13 +180,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Modal Search End -->
 
 
 
         <!-- About Start -->
-        <div class="container-fluid py-5">
+         <section id="about">
+            <div class="container-fluid py-5">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
@@ -233,6 +236,7 @@
                                     <div class="d-flex flex-column justify-content-center">
                                         <span class="text-primary">Vous avez des questions ?</span>
                                         <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Gratuit : +235-62-41-59-59</span>
+                                        <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Gratuit : +235-92-92-48-34</span>
                                     </div>
                                 </div>
                             </div>
@@ -241,11 +245,26 @@
                 </div>
             </div>
         </div>
+         </section>
+        
         <!-- About End -->
 
 
         <!-- Counter Facts Start -->
-        <div class="container-fluid counter-facts py-5">
+         <section id="experience">
+
+                <div class="container-fluid service overflow-hidden pt-5">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Notre expertise à votre service</h5>
+                    </div>
+                    <h3 class="display-5 mb-4">Une expertise fiable pour toutes vos démarches de voyage!</h3>
+                    <p class="mb-0">Nous nous engageons à traiter vos demandes avec rapidité et précision, en vous offrant un service efficace et sans complications. La satisfaction de nos clients est au cœur de nos priorités, grâce à un accompagnement de qualité et des résultats conformes à leurs attentes.</p>
+                </div>
+
+
+            <div class="container-fluid counter-facts py-5">
             <div class="container py-5">
                 <div class="row g-4">
                     <div class="col-12 col-sm-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
@@ -262,20 +281,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="counter">
-                            <div class="counter-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="counter-content">
-                                <h3>Membres de l'équipe</h3>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="counter-value" data-toggle="counter-up">377</span>
-                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="col-12 col-sm-6 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="counter">
                             <div class="counter-icon">
@@ -307,11 +312,15 @@
                 </div>
             </div>
         </div>
+         </section>
+        
         <!-- Counter Facts End -->
 
 
         <!-- Services Start -->
-        <div class="container-fluid service overflow-hidden pt-5">
+         <section id="services">
+            <section id="visa">
+                <div class="container-fluid service overflow-hidden pt-5">
             <div class="container py-5">
                 <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
@@ -321,7 +330,7 @@
                     <p class="mb-0">Grâce à nos services de visa rapides et fiables, nous facilitons vos démarches pour voyager et séjourner en toute sérénité — que ce soit pour le tourisme, les études, les affaires, la santé, le Hadj ou la Oumra.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s" id="visa-travail">
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
@@ -332,13 +341,13 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Visa de travail</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorer plus</a>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#visa-travail">Explorer plus</a>
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Visa de travail</h4></a>
                                         <div class="px-4">
                                             <p class="mb-4">Que ce soit pour une mission professionnelle, un emploi à l’étranger ou un projet d’affaires, nous vous aidons à obtenir votre visa rapidement et sans tracas, avec un accompagnement sur mesure à chaque étape.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="#">Explorer plus</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="#visa-travail">Explorer plus</a>
                                         </div>
                                     </div>
                                 </div>
@@ -346,7 +355,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s" id="visa-diplomatique">
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
@@ -357,20 +366,20 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Visa diplomatique</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorer plus</a>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#visa-diplomatique">Explorer plus</a>
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Visa diplomatique</h4></a>
                                         <div class="px-4">
                                             <p class="mb-4">Nous assurons un accompagnement personnalisé pour les détenteurs de passeports diplomatiques ou officiels. Notre service garantit une gestion rapide, discrète et conforme aux exigences protocolaires des ambassades et institutions.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explorer plus</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#visa-diplomatique">Explorer plus</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s" id="visa-sante">
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
@@ -381,20 +390,20 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Visa médical</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorer plus</a>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#visa-sante">Explorer plus</a>
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Visa médical</h4></a>
                                         <div class="px-4">
                                             <p class="mb-4">Voyagez pour vos soins en toute sérénité. Notre service garantit une gestion rapide, discrète et conforme aux exigences des ambassades et établissements médicaux.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explorer plus</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#visa-sante">Explorer plus</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s" id="visa-etude">
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
@@ -405,20 +414,20 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Visa d’étude</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorer plus</a>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#visa-etude">Explorer plus</a>
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Visa d’étude</h4></a>
                                         <div class="px-4">
                                             <p class="mb-4">Préparez votre avenir à l’étranger en toute tranquillité. Nous vous accompagnons dans toutes les démarches pour obtenir votre visa d’étude rapidement et facilement, en respectant les exigences des établissements et des ambassades.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explorer plus</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#visa-etude">Explorer plus</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s" id="visa-oumra">
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
@@ -429,20 +438,20 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Visa Hadj et Oumra</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorer plus</a>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#visa-oumra">Explorer plus</a>
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Visa Hadj et Oumra</h4></a>
                                         <div class="px-4">
                                             <p class="mb-4">Nous facilitons vos démarches pour l’obtention rapide et sécurisée de votre visa Hadj ou Oumra, afin que vous puissiez accomplir votre pèlerinage en toute sérénité.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explorer plus</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#visa-oumra">Explorer plus</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s" id="visa-tourisme">
                         <div class="service-item">
                             <div class="service-inner">
                                 <div class="service-img">
@@ -453,13 +462,13 @@
                                         <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
                                             <a href="#" class="h4 text-white mb-0">Visa de Tourisme</a>
                                         </div>
-                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explorer plus</a>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#visa-tourisme">Explorer plus</a>
                                     </div>
                                     <div class="service-content pb-4">
                                         <a href="#"><h4 class="text-white mb-4 py-3">Visa de Tourisme</h4></a>
                                         <div class="px-4">
                                             <p class="mb-4">Partez à la découverte du monde sans souci. Nous vous accompagnons dans toutes les étapes pour obtenir votre visa touristique rapidement et facilement, selon les exigences du pays de destination.</p>
-                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explorer plus</a>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#visa-tourisme">Explorer plus</a>
                                         </div>
                                     </div>
                                 </div>
@@ -469,81 +478,16 @@
                 </div>
             </div>
         </div>
+            </section>
+         </section>
+        
         <!-- Services End -->
 
 
 
-        <!-- Features Start -->
-        <div class="container-fluid features overflow-hidden py-5">
-            <div class="container">
-                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Pourquoi nous choisir ?</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">Offrir des services sur mesure selon les besoins de nos clients</h1>
-                    <p class="mb-0">Nous nous engageons à fournir des solutions personnalisées qui répondent aux besoins uniques de chaque client. Notre équipe d'experts est dédiée à vous accompagner à chaque étape du processus.</p>
-                </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-dollar-sign fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Tarifs avantageux</h5>
-                                <p class="mb-3">Nous offrons des tarifs compétitifs, clairs et sans frais cachés, pour un service fiable et transparent.</p>
-                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fab fa-cc-visa fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Assistance Visa</h5>
-                                <p class="mb-3">Nous vous accompagnons dans toutes les étapes pour obtenir votre visa rapidement et facilement.</p>
-                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-atlas fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Traitement plus rapide</h5>
-                                <p class="mb-3">Nous nous engageons à traiter votre demande dans les plus brefs délais, tout en garantissant la qualité de notre service.</p>
-                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="feature-item text-center p-4">
-                            <div class="feature-icon p-3 mb-4">
-                                <i class="fas fa-users fa-4x text-primary"></i>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-3">Entretiens directs</h5>
-                                <p class="mb-3">Nous vous mettons en relation avec des experts pour des entretiens directs et personnalisés.</p>
-                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Avantages supplémentaires</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Features End -->
-
-
-
         <!-- Countries We Offer Start -->
-        <div class="container-fluid country overflow-hidden py-5">
+         <section id="pays">
+            <div class="container-fluid country overflow-hidden py-5">
             <div class="container">
                 <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
                     <div class="sub-style">
@@ -553,7 +497,7 @@
                     <p class="mb-0">Nous proposons un accompagnement complet pour l’obtention de vos visas vers de nombreuses destinations. Que ce soit pour le tourisme, les études, les affaires, la santé ou le pèlerinage, notre expertise facilite vos démarches administratives afin que votre voyage se déroule en toute sérénité!</p>
                 </div>
                 <div class="row g-4 text-center">
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s" id="france">
                         <div class="country-item">
                             <div class="rounded overflow-hidden">
                                 <img src="img/france-.png" class="img-fluid w-100 rounded" alt="Image">
@@ -562,11 +506,11 @@
                                 <img src="img/France.png" class="img-fluid rounded-circle" alt="Image">
                             </div>
                             <div class="country-name">
-                                <a href="#" class="text-white fs-4">France</a>
+                                <a href="#france" class="text-white fs-4">France</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s" id="egypte">
                         <div class="country-item">
                             <div class="rounded overflow-hidden">
                                 <img src="img/egypt-.png" class="img-fluid w-100 rounded" alt="Image">
@@ -575,11 +519,11 @@
                                 <img src="img/egypt.png" class="img-fluid rounded-circle" alt="Image">
                             </div>
                             <div class="country-name">
-                                <a href="#" class="text-white fs-4">Egypte</a>
+                                <a href="#egypte" class="text-white fs-4">Egypte</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s" id="emirates">
                         <div class="country-item">
                             <div class="rounded overflow-hidden">
                                 <img src="img/emirates-.png" class="img-fluid w-100 rounded" alt="Image">
@@ -588,11 +532,11 @@
                                 <img src="img/emirates.png" class="img-fluid rounded-circle" alt="Image">
                             </div>
                             <div class="country-name">
-                                <a href="#" class="text-white fs-4">Emirats Arabes Unis</a>
+                                <a href="#emirates" class="text-white fs-4">Emirats Arabes Unis</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s" id="saoudi">
                         <div class="country-item">
                             <div class="rounded overflow-hidden">
                                 <img src="img/saoudi-.png" class="img-fluid w-100 rounded" alt="Image">
@@ -601,16 +545,132 @@
                                 <img src="img/saoudi.png" class="img-fluid rounded-circle" alt="Image">
                             </div>
                             <div class="country-name">
-                                <a href="#" class="text-white fs-4">Arabie Saoudite</a>
+                                <a href="#saoudi" class="text-white fs-4">Arabie Saoudite</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                         <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Autres pays</a>
+                    </div> -->
+
+                     <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s" id="maroc">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/maroc T.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/maroc D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#maroc" class="text-white fs-4">Maroc</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s" id="thailande">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/thailand T.webp" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/thailand D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#thailande" class="text-white fs-4">Thailand</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s" id="turquie">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/turquie T.png" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/turquie D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#turquie" class="text-white fs-4">Turquie</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s" id="tunisie">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/tunisie T.png" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/tunisie D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#tunisie" class="text-white fs-4">Tunisie</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s" id="algerie">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/algerie T.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/algerie D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#algerie" class="text-white fs-4">Algerie</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s" id="india">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/india T.png" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/india D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#india" class="text-white fs-4">India</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s" id="koweit">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/koweit T.png" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/koweit D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#koweit" class="text-white fs-4">Koweit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s" id="jordanie">
+                        <div class="country-item">
+                            <div class="rounded overflow-hidden">
+                                <img src="img/jordanie T.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            </div>
+                            <div class="country-flag">
+                                <img src="img/jordanie D.png" class="img-fluid rounded-circle" alt="Image">
+                            </div>
+                            <div class="country-name">
+                                <a href="#jordanie" class="text-white fs-4">Jordanie</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
                 </div>
             </div>
         </div>
+         </section>
+        
         <!-- Countries We Offer End -->
 
 
@@ -782,90 +842,198 @@
         <!-- Training End -->
 
 
-        <!-- Contact Start -->
-        <!-- <div class="container-fluid contact overflow-hidden pb-5">
+        <!-- Sanitaire Start -->
+         <section id="santé">
+            <div class="container-fluid contact overflow-hidden pb-5">
             <div class="container py-5">
                 <div class="office pt-5">
                     <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="sub-style">
-                            <h5 class="sub-title text-primary px-3">Worlwide Offices</h5>
+                            <h5 class="sub-title text-primary px-3">Evacuation sanitaire</h5>
                         </div>
-                        <h1 class="display-5 mb-4">Explore Our Office Worldwide</h1>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+                        <h1 class="display-5 mb-4">Explorer les pays pour l’évacuation sanitaire</h1>
+                        <p class="mb-0">Nous vous accompagnons dans vos démarches d’évacuation sanitaire vers des pays reconnus pour la qualité de leurs soins. Grâce à notre réseau de partenaires médicaux et notre expertise en formalités de voyage, nous assurons un transfert rapide, sécurisé et bien coordonné!</p>
                     </div>
                     <div class="row g-4 justify-content-center">
                         <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="office-item p-4">
                                 <div class="office-img mb-4">
-                                    <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <img src="img/Tunisie S.png" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">Australia</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                                    <h4 class="mb-2">Tunisie</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="office-item p-4">
                                 <div class="office-img mb-4">
-                                    <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <img src="img/Algerie S.png" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">Canada</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                                    <h4 class="mb-2">Algerie</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="office-item p-4">
                                 <div class="office-img mb-4">
-                                    <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <img src="img/Egypt S.png" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">United Kingdom</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                                    <h4 class="mb-2">Egypt</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="office-item p-4">
                                 <div class="office-img mb-4">
-                                    <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <img src="img/Maroc S.png" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="office-content d-flex flex-column">
+                                    <h4 class="mb-2">Maroc</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="office-item p-4">
+                                <div class="office-img mb-4">
+                                    <img src="img/Jordanie S.png" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="office-content d-flex flex-column">
+                                    <h4 class="mb-2">Jordanie</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="office-item p-4">
+                                <div class="office-img mb-4">
+                                    <img src="img/Turquie S.png" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="office-content d-flex flex-column">
+                                    <h4 class="mb-2">Turquie</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="office-item p-4">
+                                <div class="office-img mb-4">
+                                    <img src="img/India S.png" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="office-content d-flex flex-column">
                                     <h4 class="mb-2">India</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="office-item p-4">
+                                <div class="office-img mb-4">
+                                    <img src="img/Thailand S.png" class="img-fluid w-100 rounded" alt="">
+                                </div>
+                                <div class="office-content d-flex flex-column">
+                                    <h4 class="mb-2">Thailand</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- Contact End -->
+        </div>
+         </section>
+         
+        <!-- Sanitaire End -->
+
+
+         <!-- Features Start -->
+          <section id="autres">
+            <div class="container-fluid features overflow-hidden py-5">
+            <div class="container">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Pourquoi nous choisir ?</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">Offrir des services sur mesure selon les besoins de nos clients</h1>
+                    <p class="mb-0">Nous nous engageons à fournir des solutions personnalisées qui répondent aux besoins uniques de chaque client. Notre équipe d'experts est dédiée à vous accompagner à chaque étape du processus.</p>
+                </div>
+                <div class="row g-4 justify-content-center text-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item text-center p-4">
+                            <div class="feature-icon p-3 mb-4">
+                                <i class="fas fa-dollar-sign fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Tarifs avantageux</h5>
+                                <p class="mb-3">Nous offrons des tarifs compétitifs, clairs et sans frais cachés, pour un service fiable et transparent.</p>
+                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item text-center p-4">
+                            <div class="feature-icon p-3 mb-4">
+                                <i class="fab fa-cc-visa fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Assistance Visa</h5>
+                                <p class="mb-3">Nous vous accompagnons dans toutes les étapes pour obtenir votre visa rapidement et facilement.</p>
+                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item text-center p-4">
+                            <div class="feature-icon p-3 mb-4">
+                                <i class="fas fa-atlas fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Traitement plus rapide</h5>
+                                <p class="mb-3">Nous nous engageons à traiter votre demande dans les plus brefs délais, tout en garantissant la qualité de notre service.</p>
+                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="feature-item text-center p-4">
+                            <div class="feature-icon p-3 mb-4">
+                                <i class="fas fa-users fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Entretiens directs</h5>
+                                <p class="mb-3">Nous vous mettons en relation avec des experts pour des entretiens directs et personnalisés.</p>
+                                <a class="btn btn-secondary rounded-pill" href="#">En savoir plus<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Avantages supplémentaires</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </section>
+        
+        <!-- Features End -->
+
+
+
+
 
 
         <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+         <section id="contact">
+            <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Nos contacts</h4>
+                            <h4 class="text-secondary mb-4" style="color: var(--bs-secondary) !important">Nos contacts</h4>
                             <a href=""><i class="fa fa-map-marker-alt me-2"></i> Boulevard President NGARTA TOMBALBAYE (Rue de 40M)</a>
                             <a href=""><i class="fas fa-envelope me-2"></i> contact@suntravelagn.com</a>
                             <a href=""><i class="fas fa-phone me-2"></i> +235-62-41-59-59</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +235-92-92-48-34  </a>
+                            <a href="" class="mb-3"><i class="fas fa-phone me-2"></i> +235-92-92-48-34  </a>
                             <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <i class="fas fa-share fa-2x text-secondary me-2" style="color: var(--bs-secondary) !important"></i>
                                 <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
@@ -875,7 +1043,7 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Horaires d’ouverture</h4>
+                            <h4 class="text-secondary mb-4" style="color: var(--bs-secondary) !important">Horaires d’ouverture</h4>
                             <div class="mb-3">
                                 <h6 class="text-muted mb-0">Lun - Ven:</h6>
                                 <p class="text-white mb-0">De 9h00 à 19h00</p>
@@ -892,18 +1060,18 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Nos Services</h4>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Affaires</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Évaluation</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Hadj / Oumra</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Études</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Conseil</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Travail / Carrière</a>
+                            <h4 class="text-secondary mb-4" style="color: var(--bs-secondary) !important">Nos Services</h4>
+                            <a href="#services" class=""><i class="fas fa-angle-right me-2"></i> Affaires</a>
+                            <a href="#services" class=""><i class="fas fa-angle-right me-2"></i> Évaluation</a>
+                            <a href="#services" class=""><i class="fas fa-angle-right me-2"></i> Hadj / Oumra</a>
+                            <a href="#services" class=""><i class="fas fa-angle-right me-2"></i> Études</a>
+                            <a href="#services" class=""><i class="fas fa-angle-right me-2"></i> Conseil</a>
+                            <a href="#services" class=""><i class="fas fa-angle-right me-2"></i> Travail / Carrière</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item">
-                            <h4 class="text-secondary mb-4">Lettre d’information</h4>
+                            <h4 class="text-secondary mb-4" style="color: var(--bs-secondary) !important">Lettre d’information</h4>
                             <p class="text-white mb-3">Abonnez-vous à notre newsletter pour recevoir régulièrement des conseils, des actualités et des offres exclusives sur les services de visa et vos projets de voyage.</p>
                             <div class="position-relative mx-auto rounded-pill">
                                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Entrez votre email">
@@ -914,6 +1082,8 @@
                 </div>
             </div>
         </div>
+         </section>
+        
         <!-- Footer End -->
 
         
