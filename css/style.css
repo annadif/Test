@@ -1022,6 +1022,24 @@
     align-self: center !important;
 }
 
+/* Custom brand title size */
+.navbar-brand h2 {
+    font-size: 2.5rem !important; /* Adjust this value as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand h2 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand h2 {
+        font-size: 1.75rem !important;
+    }
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 991.98px) {
     .navbar-brand h2 {
