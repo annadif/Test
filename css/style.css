@@ -338,10 +338,12 @@
 
     .navbar-light .navbar-nav .nav-link:before {
         bottom: auto;
+        position: right;
     }
 
     .navbar-light .navbar-nav .nav-link:after {
         top: auto;
+        position: right;
     }
 
     .navbar-light .navbar-nav .nav-link:hover:before,
