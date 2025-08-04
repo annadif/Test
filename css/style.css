@@ -1008,7 +1008,7 @@
     line-height: 1.2 !important;
     display: flex !important;
     align-items: center !important;
-    font-size: 3rem !important; /* Increased from 2.5rem */
+    font-size: 2.5rem !important; /* Decreased from 3rem */
 }
 
 .navbar-brand img {
@@ -1023,23 +1023,14 @@
     align-self: center !important;
 }
 
-/* Custom brand title size - Updated */
-.navbar-brand h2 {
-    margin: 0 !important;
-    line-height: 1.2 !important;
-    display: flex !important;
-    align-items: center !important;
-    font-size: 3rem !important; /* Increased from 2.5rem */
-}
-
-/* Responsive adjustments - Updated */
+/* Responsive adjustments */
 @media (max-width: 991.98px) {
     .navbar-brand h2 {
-        font-size: 2.5rem !important; /* Increased from 2rem */
+        font-size: 2rem !important; /* Decreased from 2.5rem */
     }
     
     .navbar-brand img {
-        max-height: 35px !important; /* Increased from 30px */
+        max-height: 35px !important;
     }
     
     .navbar-toggler {
@@ -1053,10 +1044,10 @@
 
 @media (max-width: 576px) {
     .navbar-brand h2 {
-        font-size: 2rem !important; /* Increased from 1.2rem */
+        font-size: 1.75rem !important; /* Decreased from 2rem */
     }
     
     .navbar-brand img {
-        max-height: 30px !important; /* Increased from 25px */
+        max-height: 30px !important;
     }
 }
