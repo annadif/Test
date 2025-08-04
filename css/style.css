@@ -444,24 +444,84 @@
 
 @media (max-width: 768px) {
     .carousel-header {
-        height: 700px !important;
+        height: 60vh !important; /* Reduce height to 60% of viewport */
     }
-
-    .carousel-header .carousel-control-prev .carousel-control-prev-icon,
-    .carousel-header .carousel-control-next .carousel-control-next-icon {
-        margin-top: 500px;
+    
+    .carousel-inner {
+        height: 60vh !important;
     }
-
-    .carousel-header .carousel-control-prev .carousel-control-prev-icon {
-        margin-left: 0px;
+    
+    .carousel-item {
+        height: 60vh !important;
     }
-
-    .carousel-header .carousel-control-next .carousel-control-next-icon {
-        margin-right: 0px;
+    
+    .carousel-item img {
+        height: 60vh !important;
+        object-fit: cover;
     }
+    
+    .carousel-caption {
+        padding: 20px 10px !important;
+        bottom: 10% !important;
+    }
+    
+    .carousel-caption .text-center {
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .carousel-caption h4,
+    .carousel-caption h5 {
+        font-size: 1.2rem !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .carousel-caption .btn {
+        padding: 8px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
 
-    .carousel-header .carousel .carousel-indicators {
-        padding: 0;
+/* Extra small devices */
+@media (max-width: 576px) {
+    .carousel-header {
+        height: 50vh !important; /* Even smaller for very small screens */
+    }
+    
+    .carousel-inner {
+        height: 50vh !important;
+    }
+    
+    .carousel-item {
+        height: 50vh !important;
+    }
+    
+    .carousel-item img {
+        height: 50vh !important;
+        object-fit: cover;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .carousel-caption h4,
+    .carousel-caption h5 {
+        font-size: 1rem !important;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.85rem !important;
     }
 }
 /*** Carousel Hero Header End ***/
