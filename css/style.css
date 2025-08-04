@@ -1008,7 +1008,7 @@
     line-height: 1.2 !important;
     display: flex !important;
     align-items: center !important;
-    font-size: 2.2rem !important; /* Decreased from 3rem */
+    font-size: 2.5rem !important; /* Updated to 2.5rem */
 }
 
 .navbar-brand img {
@@ -1026,7 +1026,7 @@
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
     .navbar-brand h2 {
-        font-size: 1.8rem !important; /* Decreased from 2rem */
+        font-size: 2.2rem !important; /* Updated to 2.2rem */
     }
     
     .navbar-brand img {
@@ -1044,7 +1044,7 @@
 
 @media (max-width: 576px) {
     .navbar-brand h2 {
-        font-size: 1.5rem !important; /* Decreased from 1.75rem */
+        font-size: 1.4rem !important; /* Already correct */
     }
     
     .navbar-brand img {
