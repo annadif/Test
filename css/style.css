@@ -1,4 +1,3 @@
-
 /*** Spinner Start ***/
 /*** Spinner ***/
 
@@ -939,3 +938,56 @@
     background: var(--bs-secondary) !important;
 }
 /*** copyright end ***/
+
+/* Mobile navbar fixes */
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        border: 1px solid var(--bs-primary) !important;
+        padding: 8px 12px;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    
+    .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid #DDDDDD;
+        padding-top: 15px;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 0 !important;
+        margin: 0 !important;
+        text-align: left;
+    }
+    
+    .navbar-nav .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+    
+    .navbar-nav .dropdown-item {
+        padding: 8px 0;
+        color: var(--bs-primary) !important;
+    }
+    
+    .navbar-brand h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .navbar-brand img {
+        max-height: 35px !important;
+    }
+}
+
+/* Ensure toggler icon is visible */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
